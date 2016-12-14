@@ -1,14 +1,20 @@
-# 1 1 2 3 5 8
+'''
+Fibonacci series: 1 1 2 3 5 8 13 ...
+
+Write a function to spit out the nth Fibonacci number 
+input:
+5
+
+output:
+5
+'''
 
 def fib(limit):
 
 	a,b = 0,1
-	fib_list=[]
 	for i in xrange(limit):
 		a,b = b, a+b
-		fib_list.append(a)
 
-	for v in fib_list:
-		print v
+	return a
 
-fib(7)
+print fib(10)

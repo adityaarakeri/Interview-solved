@@ -1,5 +1,11 @@
-import os
+'''
+Write a function to search for a particular pattern of file in the 
+current directory
 
+'''
+
+
+import os
 def osWalkandFind(pat):
 
 	pattern_lst = []
@@ -8,7 +14,6 @@ def osWalkandFind(pat):
 		for filename in filenames:
 			if filename.endswith(pat):
 				pattern_lst.append(os.path.join(dirpath, filename))
-
 
 	print "Files found of format({}): {}".format(pat, str(len(pattern_lst)))
 

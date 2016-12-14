@@ -1,15 +1,17 @@
-#0 1
-#1 11
-#2 21
-#3 1211
-#4 111221
-#5 312211
-#6 13112221
+'''
+Function to look at the provided alphanumeric string and say it in order
 
-# i = 1
-# n = 7
+input:
+'1A2BBC'
+
+output:
+'111A122B1C'
+
+'''
+
 
 def looksay(look):
+	
 	look = str(look)
 	prev = look[0]
 	count = 1
@@ -25,4 +27,4 @@ def looksay(look):
 
 	return say + str(count) + prev 
 
-print looksay(raw_input("Enter a value which needs to be looked and sayed: ")) #number will go here
+print looksay(raw_input("Enter a value which needs to be looked and said: ")) #number will go here
