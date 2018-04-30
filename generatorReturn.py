@@ -1,5 +1,7 @@
-
 # 0 1 8 27 64
 
-for f in [i for i in xrange(5) yield i**3]:
-	print f
+def gen(limit):
+    for i in xrange(limit):
+        yield i**3
+
+for f in gen(5): print f

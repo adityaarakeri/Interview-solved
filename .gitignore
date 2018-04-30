@@ -1,0 +1,4 @@
+*.pyc
+__init*
+__pycache*
+.vscode*

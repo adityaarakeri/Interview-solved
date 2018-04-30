@@ -12,19 +12,23 @@ output:
 
 def looksay(look):
 	
+	
 	look = str(look)
-	prev = look[0]
-	count = 1
-	say = ''
-
-	for char in look[1:]:
-		if char == prev:
-			count += 1
-			continue
-		say += str(count) + prev
-		prev = char
+	if len(look) == 0 :
+    		return 'Empty string entered'
+	else:
+		prev = look[0]
 		count = 1
+		say = ''
 
-	return say + str(count) + prev 
+		for char in look[1:]:
+			if char == prev:
+				count += 1
+				continue
+			say += str(count) + prev
+			prev = char
+			count = 1
+
+		return say + str(count) + prev 
 
 print looksay(raw_input("Enter a value which needs to be looked and said: ")) #number will go here

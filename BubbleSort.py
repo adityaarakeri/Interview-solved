@@ -10,6 +10,19 @@ def BubbleSort(lst):
 	return lst
 
 # print BubbleSort([1,5,4,3,6,7])
+def BubbleSort1(lst):
+    moreswaps=True
+
+    while moreswaps:
+        moreswaps=False
+        for i in xrange(len(lst)-1):
+            if lst[i] > lst[i+1]:
+                moreswaps=True
+                temp = lst[i]
+                lst[i] = lst[i+1]
+                lst[i+1] = temp
+
+    return lst
 
 class Test(unittest.TestCase):
 

@@ -9,8 +9,4 @@ class TruthTest(unittest.TestCase):
         self.assertFalse(False)
 
 if __name__ == '__main__':
-    unittest.main()
-
-
-
-		
+    unittest.main()		
