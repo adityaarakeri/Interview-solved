@@ -29,15 +29,4 @@ def permutations(str, i):
 
     return perm_list
 
-#attempt to change algo
-def Combinations2(str, step=0):
-    l =len(str)
-    s = list(str)
-
-    for i in range(1, l+1):
-        pass
-
-
-
-
 print CombinationOfWords(raw_input('Enter a string to get all the combinations: '))

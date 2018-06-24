@@ -5,11 +5,7 @@ def Cipher(string):
     if len(string)==0:
         return ""
     if len(string)==1:
-<<<<<<< HEAD
         return random.choice([chr(i) for i in xrange(97,123)])
-=======
-        return string
->>>>>>> d40be58a114407f7ab1062973b0dd1f05318646e
 
     c=0
     new_string=[]
