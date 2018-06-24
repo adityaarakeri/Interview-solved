@@ -29,10 +29,8 @@ def permutations(str, i):
 
     return perm_list
 
-
 #attempt to change algo
 def Combinations2(str, step=0):
-
     l =len(str)
     s = list(str)
 

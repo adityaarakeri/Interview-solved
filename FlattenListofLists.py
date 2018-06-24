@@ -34,4 +34,8 @@ def flattenList1(lst):
     return f_lst
 
 
+<<<<<<< HEAD
 print flattenList([[1,2,3],[4,5,6],['a','b'], [7], [8,9]])
+=======
+print flattenList([[1,2,3],[4,5,6], [7], [8,9]])
+>>>>>>> d40be58a114407f7ab1062973b0dd1f05318646e

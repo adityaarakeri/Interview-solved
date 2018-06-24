@@ -17,5 +17,9 @@ def permutations(lst):
 #
 #     return results
 
+<<<<<<< HEAD
 print permutations([1,2,3])
+=======
+print permutations([1])
+>>>>>>> d40be58a114407f7ab1062973b0dd1f05318646e
 
