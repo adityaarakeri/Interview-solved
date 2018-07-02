@@ -26,9 +26,7 @@ def pattern_solve(inp):
                 else:
                     # print('not a num: {0}'.format(char))
                     word_stack.push(char)
-    
-    # print(word_stack.show())
-    # print(num_stack.show())
+
 
     word_till_now = ''
     while(word_stack.isEmpty() == False):
@@ -36,11 +34,9 @@ def pattern_solve(inp):
 
         if(word != '['):
             word_till_now = word + word_till_now
-            print(word_till_now)
 
         if(word == '['):
             num = num_stack.pop()
-            print num
 
             word_till_now = word_till_now * int(num)
 
