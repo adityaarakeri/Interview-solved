@@ -24,19 +24,22 @@ class Stack():
     def size(self):
         return len(self.items)
 
+    def show(self):
+        return (self.items)
 
-s = Stack()
 
-s.push(1)
-s.push(2)
-s.push(3)
-s.push(4,5)
-s.push('test')
+# s = Stack()
 
-print s.items
-print s.isEmpty()
-print s.peek()
-print s.size()
-s.pop()
-print s.items
+# s.push(1)
+# s.push(2)
+# s.push(3)
+# s.push(4,5)
+# s.push('test')
+
+# print s.items
+# print s.isEmpty()
+# print s.peek()
+# print s.size()
+# s.pop()
+# print s.items
 
