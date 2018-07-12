@@ -43,4 +43,4 @@ def pattern_solve(inp):
     
     return word_till_now    
 # print(pattern_solve('3[d2[ca]]'))
-print(pattern_solve('3[d2[ca]]'))
+print(pattern_solve('5[d2[ca]]'))
