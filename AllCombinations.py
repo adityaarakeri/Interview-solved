@@ -29,4 +29,7 @@ def permutations(str, i):
 
     return perm_list
 
+
 print CombinationOfWords(raw_input('Enter a string to get all the combinations: '))
+
+

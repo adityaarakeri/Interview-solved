@@ -41,6 +41,6 @@ class test_Palindrome(unittest.TestCase):
 
 if __name__ == '__main__':
     import timeit
-    print(timeit.timeit("Palindrome('radar')", setup="from __main__ import Palindrome"))
+    print(timeit.timeit("Palindrome('12321')", setup="from __main__ import Palindrome"))
     print(timeit.timeit("Palindrome1('radar')", setup="from __main__ import Palindrome1"))
     unittest.main(verbosity=2)
