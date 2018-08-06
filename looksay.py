@@ -12,7 +12,6 @@ output:
 
 def looksay(look):
 	
-	
 	look = str(look)
 	if len(look) == 0 :
     		return 'Empty string entered'

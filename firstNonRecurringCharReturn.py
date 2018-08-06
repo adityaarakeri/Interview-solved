@@ -38,8 +38,19 @@ def firstNonRecurring1(string):
     return None
 
 
+def firstNonRecurring_optimal(s):
+    import string
+    letters = string.ascii_letters
+    index = [s.index(l) for l in letters if s.count(l) == 1]
+    if len(index) != 0:
+        return s[min(index)]
+    else:
+        return None
+
 print(firstNonRecurring('ABCDABD'))
 print(firstNonRecurring1('ABCDABD'))
+print(firstNonRecurring_optimal('ABCDABD'))
+
 
 
 
@@ -47,4 +58,4 @@ print(firstNonRecurring1('ABCDABD'))
 #     import timeit
 #     print(timeit.timeit("firstNonRecurring('ABCDABD')", setup="from __main__ import firstNonRecurring"))
 #     print(timeit.timeit("firstNonRecurring1('ABCDABD')", setup="from __main__ import firstNonRecurring1"))
-#     # unittest.main(verbosity=2)
+#     unittest.main(verbosity=2)

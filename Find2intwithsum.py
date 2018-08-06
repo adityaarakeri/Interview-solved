@@ -1,4 +1,4 @@
-#Let A be an array of random integers and a given integer x.
+# Let A be an array of random integers and a given integer x.
 # Find all pairs of numbers from the array whose sum is equal to x.
 
 # import collections
