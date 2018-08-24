@@ -16,5 +16,17 @@ class Solution(object):
         """
         return zip(*A)
 
+    def transpose2(self, A):
+        n = len(A)
+        l = len(A[0])
+        new = [[0]*n for i in range(l)]
+        for i in range(n):
+            for j in range(l):
+                new[j][i] = A[i][j]
+
+        return new
+
 s = Solution()
 print(s.transpose([[1,2,3],[4,5,6],[7,8,9]]))
+print(s.transpose2([[1,2,3],[4,5,6],[7,8,9],[10,11,12]]))
+
