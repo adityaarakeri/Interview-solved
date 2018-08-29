@@ -2,3 +2,4 @@
 __init*
 __pycache*
 .vscode*
+.DS_Store
