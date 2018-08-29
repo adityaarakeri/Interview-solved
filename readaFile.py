@@ -1,5 +1,5 @@
 
-path='/Users/aarakeri/PythonScripts/Interview/test.txt'
+path=''
 
 total=0
 with open(path) as f:
