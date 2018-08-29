@@ -1,7 +1,0 @@
-Click Map: Y
-Tracking code: CDM-US-DM-[[FILE_CAMPAIGN_ID]]-[[FILE_LIST_ID]]
-Reporting suite: www.us.com
-Campaign: NSO - Avalon
-Campaign family: NSO
-Creative element: 
-List Id: 
