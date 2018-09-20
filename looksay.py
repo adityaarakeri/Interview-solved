@@ -14,7 +14,7 @@ def looksay(look):
 	
 	look = str(look)
 	if len(look) == 0 :
-    		return 'Empty string entered'
+    	return 'Empty string entered'
 	else:
 		prev = look[0]
 		count = 1
