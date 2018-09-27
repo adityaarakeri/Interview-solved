@@ -51,7 +51,31 @@ class Solution(object):
             s = result
         
         return s
+
+    def count_and_say_improved(self, n):
+        if n == 1:
+            return '1'
+        # counter = 0
+        s = '1'  # Start know one == '1'
+        result = []
+        for _ in xrange(n - 1):
+            counter, current_val = 0, s[0]
+            for v in s:
+                if v == current_val:
+                    counter += 1
+                else:
+                    result.append(str(counter))
+                    result.append(current_val)
+                    current_val = v
+                    counter = 1
+            result.append(str(counter))
+            result.append(current_val)
+            s = "".join(result)
+            result = []
+        return s
             
 
 s = Solution()
-print(s.countAndSay(2))
+a = 4
+print(s.countAndSay(a))
+print(s.count_and_say_improved(a))
