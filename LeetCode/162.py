@@ -37,5 +37,27 @@ class Solution:
         
         return mid
 
+    def findPeak1(self, nums):
+        n = len(nums)
+        if not nums:
+            return -1
+        peak = nums[0]
+        for i in xrange(1, n -1):
+            first = nums[i-1]
+            mid = nums[i]
+            last = nums[i+1]
+            if first < mid > last:
+                if peak < mid:
+                    peak = mid
+            else:
+                i += 1
+            
+        if peak != nums[0]:
+            return nums.index(peak)
+        else:
+            return -1
+
 s = Solution()
-print(s.findPeak([1,2,3,4,500,3,5,1]))
+A = [1,4,2,6,1]
+print(s.findPeak(A))
+print(s.findPeak1(A))

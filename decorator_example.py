@@ -35,23 +35,3 @@ print(addition.data)
 # prints => 5
 # prints => attached data to function
 
-
-# 3
-# decorator to add functionality to func along with uneven arguments
-def decorator3(function):
-    def wrapper(*args, **kwargs): # adding *args **kwargs makes it take any no of arguments
-        print "\nexecuting inside of decorator 3: {}".format(function.__name__)
-        return function(*args, **kwargs)
-    return wrapper
-
-@decorator3
-def display():
-    print "Running this inside of a decorator"
-
-display()
-
-@decorator3
-def display_info(name, age):
-    print "Display_info ran with {} and {}".format(name, age)
-
-display_info('John', 32)
