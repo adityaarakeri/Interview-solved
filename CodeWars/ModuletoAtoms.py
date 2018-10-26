@@ -28,6 +28,8 @@ def parse_molecule(formula):
         formula.append('1')
     print formula
 
+    
+
     # for i in range(len(formula) - 1):
 
     
