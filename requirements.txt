@@ -1,5 +1,3 @@
-Package                                Version  
--------------------------------------- ---------
 altgraph                               0.10.2   
 astroid                                1.6.3    
 backports.functools-lru-cache          1.5      
