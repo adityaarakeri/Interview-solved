@@ -34,10 +34,26 @@ def addNum2(n):
 
     return s
 
+# the same problem for multiplying digits
+def multiplyNums(n):
+
+    s = str(n)
+    res = 1
+    count = 0
+    while len(s) > 1:
+        for i in s:
+            res = res * int(i)
+            
+        count += 1
+        s = str(res)
+        res = 1
+    
+    return count
 
 num = raw_input("enter a number to add all digits > ")
 num1 = raw_input("enter a number to add all digits > ")
 
 print addNum(num)
 print addNum2(num1)
+print multiplyNums(num)
 

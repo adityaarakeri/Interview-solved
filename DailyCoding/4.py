@@ -14,3 +14,16 @@ You can modify the input array in-place.
 
 def func(arr):
 
+    A = set(arr)
+    A1 = set([i for i in range(min(A), max(A)+1)])
+    
+    diff = A1.difference(A)
+    if len(diff) == 0:
+        return max(A)+1
+    for i in diff:
+        if i > 0:
+            return i
+
+A = [3, 4, -1, 1]
+# A = [1, 2, 0]
+print(func(A))

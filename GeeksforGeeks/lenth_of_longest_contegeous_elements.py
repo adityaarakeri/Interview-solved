@@ -29,11 +29,10 @@ def find_length(arr):
 
         if arr[start] == arr[start+1] - 1:
             long_len += 1
-            start += 1
         else:
             result.append(long_len)
             long_len = 1
-            start += 1
+        start += 1
     
     result.append(long_len)
 
