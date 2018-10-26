@@ -10,5 +10,6 @@ Contributions are welcome
 Note: create a pull request and contribute
 
 # Test
-``` pytest Test/test.py
+```
+pytest Test/test.py
 ```
