@@ -4,3 +4,4 @@ __pycache*
 .vscode*
 .DS_Store
 *BTC
+.pytest_cache
