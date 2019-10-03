@@ -26,7 +26,7 @@ def parse_molecule(formula):
 
     if not formula[-1].isdigit():
         formula.append('1')
-    print formula
+    print(formula)
 
     
 
