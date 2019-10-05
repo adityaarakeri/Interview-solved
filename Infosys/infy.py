@@ -1,15 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Given a string, find the substring based on following conditions:
-
- 1. The substring must be the longest one of all the possible substring in the given string.
- 2. There must not be any repeating characters in the substring.
- 3. If there is more than one substring satisfying the above two conditions, then print the substring which occurs first.
- 4. Length of the substring must be minimum
-
-If there is no substring satisfying all the aforementioned conditions then print -1.
-
-
 Created on Thu Aug  8 08:41:26 2019
 
 @author: Keshu
