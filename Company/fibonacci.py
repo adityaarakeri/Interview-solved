@@ -21,9 +21,12 @@ def fibonacci_recursive(N: int) -> int:
 
 def fibonacci_iterative(N: int) -> int:
     a, b = 0, 1
+    if N <= 1:
+        return N
     for i in range(N):
         a, b = b, a + b
     return a
 
-print(fibonacci_recursive(10))
-print(fibonacci_iterative(10))
+if __name__=='__main__':
+    print(fibonacci_recursive(10))
+    print(fibonacci_iterative(10))
