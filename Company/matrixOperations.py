@@ -9,41 +9,52 @@
 
 #Solution:
 
-A = [[2, 5, 3], 
-    [4, 7, 6], 
-    [3, 8, 4]] 
-
-#B is used to store the transpose of A
-B = [[0, 0, 0], 
-    [0, 0, 0], 
-    [0, 0, 0]] 
-
-# iterate through rows
-for i in range(len(A)):
-   # iterate through columns
-   for j in range(len(A[0])):
-       B[j][i] = A[i][j]
-
-result = [[0, 0, 0], 
+#Function which returns the transpose of given matrix A
+def transpose(A) :
+    #T is used to store the transpose of A
+    T = [[0, 0, 0], 
         [0, 0, 0], 
         [0, 0, 0]] 
-  
-# iterating by row of A 
-for i in range(len(A)): 
-  
-    # iterating by coloum by B  
-    for j in range(len(B[0])): 
-  
-        # iterating by rows of B 
-        for k in range(len(B)): 
-            result[i][j] += A[i][k] * B[k][j] 
-  
-for r in result: 
-    print(r) 
+
+    # iterate through rows
+    for i in range(len(A)):
+    # iterate through columns
+        for j in range(len(A[0])):
+            T[j][i] = A[i][j]
+
+    return T
+
+#Function for multiplication of given matrix A and its transpose T
+def mult(A,T) :
+
+    result = [[0, 0, 0], 
+            [0, 0, 0], 
+            [0, 0, 0]] 
     
+    # iterating by row of A 
+    for i in range(len(A)): 
+    
+        # iterating by coloum by T 
+        for j in range(len(T[0])): 
+    
+            # iterating by rows of T
+            for k in range(len(T)): 
+                result[i][j] += A[i][k] * T[k][j] 
+    
+    return result
+
+#Given matrix A
+A = [[2, 5, 3], 
+    [4, 7, 6], 
+    [3, 8, 4]]
+T = transpose(A)
+print("Transpose of given Matrix is : ", T)
+result = mult([[2, 5, 3], [4, 7, 6], [3, 8, 4]],T)
+print("Solution : ",result)
+ 
 
 #Result :
-# [38, 61, 58]
-# [61, 101, 92]
-# [58, 92, 89]
+# Transpose of given Matrix is  :  [[2, 4, 3], [5, 7, 8], [3, 6, 4]]
+# Solution:  [[38, 61, 58], [61, 101, 92], [58, 92, 89]]
+
     
