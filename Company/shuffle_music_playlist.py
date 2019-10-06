@@ -33,7 +33,7 @@ music_playlist={
     5:"Afreen-Afreen",
     6:"Tune Jo Na Kaha",
     7:"Love Yourself",
-    8:"Baby",
+    8:"Baby-2",
 }
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8] 
