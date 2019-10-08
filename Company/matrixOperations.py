@@ -1,13 +1,13 @@
-# # This coding question was asked in Philips Healthcare Campus Interview.
-# # Level: Easy.
+# This coding question was asked in Philips Healthcare Campus Interview.
+# Level: Easy.
 
-# # Problem Statement: 
-# # 3X3 matrix was given.
-# # Find the transpose of that matrix.
-# # Multiply the original matrix with transpose.
-# # Print the Result.
+# Problem Statement: 
+# 3X3 matrix was given.
+# Find the transpose of that matrix.
+# Multiply the original matrix with transpose.
+# Print the Result.
 
-# #Solution:
+#Solution:
 
 class MatrixOperations:
 
