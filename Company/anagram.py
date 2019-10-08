@@ -10,7 +10,7 @@ if len(string2) != len(string1):
 else:
     alphabet_count1 = [0]*26
     alphabet_count2 = [0]*26
-    
+    anagram = True
     for i in range(len(string1)):
         alphabet_count1[ord(string1[i])-97] += 1
         alphabet_count2[ord(string2[i])-97] += 1
