@@ -7,6 +7,3 @@ def test_twoSum():
     # check special cases
     assert twoSum([2, 7, 1, 15], 9) == [1, 2]
 
-if __name__ == '__main__':
-    test_twoSum()
-    print('passed')
