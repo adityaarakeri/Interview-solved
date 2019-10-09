@@ -22,7 +22,3 @@ def count(input_string):
             num_vowels += 1
 
     return num_vowels
-
-
-#Lambda
-countLambda = lambda s: sum(s.lower().count(i) for i in 'aeiou')
