@@ -3,7 +3,7 @@ Test cases for 7.py found in the LeetCode folder.
 Answer by @VGZELDA
 """
 # function to be tested
-def reverse(self, x: int) -> int:
+def reverse(x):
         x=int(x)
         if(x>=0):
             x=str(x)
@@ -27,6 +27,5 @@ def reverse(self, x: int) -> int:
 def test_reverse():
     assert reverse(123) == 321, "Should be 321"
     assert reverse(120) == 21, "Should be 21"
-if __name__ == "__main__":
-    test_reverse()
-    print("Everything passed")
+test_reverse()
+print("Everything passed")
