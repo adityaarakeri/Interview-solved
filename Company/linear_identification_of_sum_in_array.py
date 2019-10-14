@@ -32,16 +32,16 @@ def solution(arr, k):
 def false_test():
   arr = [-2,5,0,20]
   k = 7
-  assert not solution(arr, k)
+  return not solution(arr, k)
   
 
 def positive_test():
   arr = [-2,5,0,20]
   k = 18
-  assert solution(arr, k)
+  return solution(arr, k)
   
 if __name__ == '__main__':
-  false_test()
-  positive_test()
+  assert false_test()
+  assert positive_test()
   arr, k = generate_random_input()
   solution(arr, k)
