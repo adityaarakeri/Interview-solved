@@ -28,17 +28,3 @@ def AllIndexesRecursive(input, x, start):
 
 def AllIndexes(input, x): 
     return AllIndexesRecursive(input, x, 0) 
-
-#arr = [1, 2, 4, 3]
-# x=9
-
-#arr = [8, 8, 8, 8, 8]
-# x=8
-
-arr = [10, 12, 11, 12, 13, 12] 
-x = 12
-  
-output=AllIndexes(arr, x) 
- 
-for i in output: 
-    print(i, end = " ") 
