@@ -24,7 +24,7 @@ def solution(arr, k):
       check if they're contained in the array. """
   hash_map = {k - e: None for e in arr}
   for e in arr:
-    if e in hash_map: // containment done in average O(1)
+    if e in hash_map:  # containment done in average O(1)
       return True
   return False
   
