@@ -39,9 +39,3 @@ def positive_test():
   arr = [-2,5,0,20]
   k = 18
   return solution(arr, k)
-  
-if __name__ == '__main__':
-  assert false_test()
-  assert positive_test()
-  arr, k = generate_random_input()
-  solution(arr, k)
