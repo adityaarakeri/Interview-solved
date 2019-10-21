@@ -9,7 +9,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-def test_binary_tree_right_side_view():
+def test_sum_root_to_leaf_numbers():
 
     root = TreeNode(1)
     
