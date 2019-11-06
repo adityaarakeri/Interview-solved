@@ -8,6 +8,3 @@ def test_string_fill():
     assert string_fill("abc", 2) == "abc"
     assert string_fill("abc", 7) == "    abc"
 
-
-if __name__ == '__main__':
-    test_string_fill()

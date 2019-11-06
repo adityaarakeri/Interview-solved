@@ -26,8 +26,3 @@ def test_fibonacci_iterative():
     assert fibonacci_iterative(5) == 5
     assert fibonacci_iterative(10) == 55
     assert fibonacci_iterative(20) == 6765
-
-if __name__ == '__main__':
-    test_fibonacci_iterative()
-    test_fibonacci_recursive()
-    print('passed')
