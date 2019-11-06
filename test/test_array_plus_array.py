@@ -23,7 +23,3 @@ def array_plus_array(arr1,arr2):
 def test_array_plus_array():
     assert array_plus_array([1, 2, 3], [4, 5, 6]) == 21, "Should be 21"
     assert array_plus_array([-1, -2, -3], [-4, -5, -6]) == -21, "Should be -21"
-
-if __name__ == "__main__":
-    test_array_plus_array()
-    print("Everything passed")
