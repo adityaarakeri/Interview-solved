@@ -1,16 +1,32 @@
-# Two Fer
+# Phone Number
 
-`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
+Clean up user-entered phone numbers so that they can be sent SMS messages.
+
+The **North American Numbering Plan (NANP)** is a telephone numbering system used by many countries in North America like the United States, Canada or Bermuda. All NANP-countries share the same international country code: `1`.
+
+NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Area code, commonly known as *area code*, followed by a seven-digit local number. The first three digits of the local number represent the *exchange code*, followed by the unique four-digit number which is the *subscriber number*.
+
+The format is usually represented as
 
 ```text
-"One for X, one for me."
+(NXX)-NXX-XXXX
 ```
 
-When X is a name or "you".
+where `N` is any digit from 2 through 9 and `X` is any digit from 0 through 9.
 
-If the given name is "Alice", the result should be "One for Alice, one for me."
-If no name is given, the result should be "One for you, one for me."
+Your task is to clean up differently formatted telephone numbers by removing punctuation and the country code (1) if present.
 
+For example, the inputs
+- `+1 (613)-995-0253`
+- `613-995-0253`
+- `1 613 995 0253`
+- `613.995.0253`
+
+should all produce the output
+
+`6139950253`
+
+**Note:** As this exercise only deals with telephone numbers used in NANP-countries, only 1 is considered a valid country code.
 
 ## Exception messages
 
@@ -30,11 +46,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test two_fer_test.py`
-- Python 3.3+: `pytest two_fer_test.py`
+- Python 2.7: `py.test phone_number_test.py`
+- Python 3.3+: `pytest phone_number_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest two_fer_test.py`
+`python -m pytest phone_number_test.py`
 
 ### Common `pytest` options
 
@@ -46,7 +62,7 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/phone-number` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
@@ -55,7 +71,7 @@ please see the [help page](http://exercism.io/languages/python).
 
 ## Source
 
-[https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
+Event Manager by JumpstartLab [http://tutorials.jumpstartlab.com/projects/eventmanager.html](http://tutorials.jumpstartlab.com/projects/eventmanager.html)
 
 ## Submitting Incomplete Solutions
 

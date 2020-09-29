@@ -1,16 +1,26 @@
-# Two Fer
+# Triangle
 
-`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
+Determine if a triangle is equilateral, isosceles, or scalene.
 
-```text
-"One for X, one for me."
-```
+An _equilateral_ triangle has all three sides the same length.
 
-When X is a name or "you".
+An _isosceles_ triangle has at least two sides the same length. (It is sometimes
+specified as having exactly two sides the same length, but for the purposes of
+this exercise we'll say at least two.)
 
-If the given name is "Alice", the result should be "One for Alice, one for me."
-If no name is given, the result should be "One for you, one for me."
+A _scalene_ triangle has all sides of different lengths.
 
+## Note
+
+For a shape to be a triangle at all, all sides have to be of length > 0, and
+the sum of the lengths of any two sides must be greater than or equal to the
+length of the third side. See [Triangle Inequality](https://en.wikipedia.org/wiki/Triangle_inequality).
+
+## Dig Deeper
+
+The case where the sum of the lengths of two sides _equals_ that of the
+third is known as a _degenerate_ triangle - it has zero area and looks like
+a single line. Feel free to add your own code/tests to check for degenerate triangles.
 
 ## Exception messages
 
@@ -30,11 +40,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test two_fer_test.py`
-- Python 3.3+: `pytest two_fer_test.py`
+- Python 2.7: `py.test triangle_test.py`
+- Python 3.3+: `pytest triangle_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest two_fer_test.py`
+`python -m pytest triangle_test.py`
 
 ### Common `pytest` options
 
@@ -46,7 +56,7 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/triangle` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
@@ -55,7 +65,7 @@ please see the [help page](http://exercism.io/languages/python).
 
 ## Source
 
-[https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
+The Ruby Koans triangle project, parts 1 & 2 [http://rubykoans.com](http://rubykoans.com)
 
 ## Submitting Incomplete Solutions
 

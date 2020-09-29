@@ -1,16 +1,30 @@
-# Two Fer
+# Word Search
 
-`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
+In word search puzzles you get a square of letters and have to find specific
+words in them.
+
+For example:
 
 ```text
-"One for X, one for me."
+jefblpepre
+camdcimgtc
+oivokprjsm
+pbwasqroua
+rixilelhrs
+wolcqlirpc
+screeaumgr
+alxhpburyi
+jalaycalmp
+clojurermt
 ```
 
-When X is a name or "you".
+There are several programming languages hidden in the above square.
 
-If the given name is "Alice", the result should be "One for Alice, one for me."
-If no name is given, the result should be "One for you, one for me."
+Words can be hidden in all kinds of directions: left-to-right, right-to-left,
+vertical and diagonal.
 
+Given a puzzle and a list of words return the location of the first and last
+letter of each word.
 
 ## Exception messages
 
@@ -30,11 +44,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test two_fer_test.py`
-- Python 3.3+: `pytest two_fer_test.py`
+- Python 2.7: `py.test word_search_test.py`
+- Python 3.3+: `pytest word_search_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest two_fer_test.py`
+`python -m pytest word_search_test.py`
 
 ### Common `pytest` options
 
@@ -46,16 +60,12 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/word-search` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
 please see the [help page](http://exercism.io/languages/python).
-
-## Source
-
-[https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
 
 ## Submitting Incomplete Solutions
 

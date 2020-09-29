@@ -1,16 +1,35 @@
-# Two Fer
+# All Your Base
 
-`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
+Convert a number, represented as a sequence of digits in one base, to any other base.
 
-```text
-"One for X, one for me."
-```
+Implement general base conversion. Given a number in base **a**,
+represented as a sequence of digits, convert it to base **b**.
 
-When X is a name or "you".
+## Note
 
-If the given name is "Alice", the result should be "One for Alice, one for me."
-If no name is given, the result should be "One for you, one for me."
+- Try to implement the conversion yourself.
+  Do not use something else to perform the conversion for you.
 
+## About [Positional Notation](https://en.wikipedia.org/wiki/Positional_notation)
+
+In positional notation, a number in base **b** can be understood as a linear
+combination of powers of **b**.
+
+The number 42, *in base 10*, means:
+
+(4 * 10^1) + (2 * 10^0)
+
+The number 101010, *in base 2*, means:
+
+(1 * 2^5) + (0 * 2^4) + (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0)
+
+The number 1120, *in base 3*, means:
+
+(1 * 3^3) + (1 * 3^2) + (2 * 3^1) + (0 * 3^0)
+
+I think you got the idea!
+
+*Yes. Those three numbers above are exactly the same. Congratulations!*
 
 ## Exception messages
 
@@ -30,11 +49,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test two_fer_test.py`
-- Python 3.3+: `pytest two_fer_test.py`
+- Python 2.7: `py.test all_your_base_test.py`
+- Python 3.3+: `pytest all_your_base_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest two_fer_test.py`
+`python -m pytest all_your_base_test.py`
 
 ### Common `pytest` options
 
@@ -46,16 +65,12 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/all-your-base` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
 please see the [help page](http://exercism.io/languages/python).
-
-## Source
-
-[https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
 
 ## Submitting Incomplete Solutions
 
