@@ -33,7 +33,6 @@ To contribute make sure the Algorithm isn't commited yet! Make sure to add the n
 ### Pull Requests
 - Only Pull Requests **joined with an Issue** and matching the **naming-conventions**
 - If there is no Issue joined in the PR your PR will be labeld as **spam** and closed.
-- If your code don't passes the Check on LeetCode.com your PR will be labeld as **"invalid"** and the Issue stays open for the next PR!
 - If your PR doesn' follow the Contributing Guidelines of this Repository it will be also marked as **spam** and closed!
 
 ### Spam Users
@@ -72,7 +71,7 @@ git push origin branch-name
 
 ## Which PRs will be NOT accepted?
 * Ones you are NOT assigned to
-* Your PR is NOT linked to the Issue you are linked to
+* Your PR is NOT linked to the Issue you created
 * Your Solution is not correct
 * Your PR contains more than the .py file
 * PRs that "correct" Typos or spam files with comments
