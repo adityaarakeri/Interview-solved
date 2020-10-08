@@ -22,8 +22,8 @@ class T:
 
 
 def unit_test():
-    assert solution(T(T(),T(T(), T())) == 2
+    assert solution(T(T(),T(T(), T()))) == 2
     assert solution(T(T(T(), T(T(None, T(T(),T())))), T(T()))) == 5
 
-if __name__ = '__main__':
+if __name__ == '__main__':
    unit_test()
