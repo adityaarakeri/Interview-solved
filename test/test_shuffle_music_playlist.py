@@ -18,7 +18,7 @@ def randomize (arr, n):
     # need to run for the first element that's why i > 0 
     for i in range(n-1,0,-1): 
         # Pick a random index from 0 to i 
-        j = random.randint(0,i+1) 
+        j = random.randint(0,i) 
   
         # Swap arr[i] with the element at random index 
         arr[i],arr[j] = arr[j],arr[i] 
