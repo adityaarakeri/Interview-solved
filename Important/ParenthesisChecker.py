@@ -4,4 +4,4 @@ def ParaChecker(symbolString):
     pass
 
 
-print ParaChecker(raw_input(""))
+print(ParaChecker(input("")))

@@ -9,19 +9,20 @@ output
 voctir
 '''
 
+
 def vowelReplace(str):
     l = list(str)
     vowel = ['a', 'e', 'i', 'o', 'u']
     deque = []
     newString = ''
 
-    #edge case:
-    if len(l) == 0 :
+    # edge case:
+    if len(l) == 0:
         return "Empty"
-    elif len(l) == 1 :
+    elif len(l) == 1:
         return str
 
-    #everything else
+    # everything else
     else:
         for char in l:
             if char in vowel:
@@ -31,7 +32,7 @@ def vowelReplace(str):
         if len_d % 2 == 1:
             half = len_d/2
             middle = deque[len_d/2]
-            deque = deque[:half] + deque[half+1 :]
+            deque = deque[:half] + deque[half+1:]
         else:
             middle = ''
 
@@ -51,5 +52,6 @@ def vowelReplace(str):
                         rearFlag = True
 
         return newString
-            
-print vowelReplace(raw_input("Enter the string: "))
+
+
+print(vowelReplace(input("Enter the string: ")))

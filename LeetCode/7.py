@@ -14,25 +14,45 @@ Example 3:
 Input: 120
 Output: 21
 """
-class Solution:
-    def reverse(self, x: int) -> int:
-        x=int(x)
-        if(x>=0):
-            x=str(x)
-            x=x[::-1]
-            x=int(x)
-            if(x<-1*(2**31))or(x>=2**31):
-                return 0
+
+
+class Solution(object):
+    def matchChar(self, sc, pc):
+        return sc == pc or pc == '.'
+
+    def isEndOfStar(self, p):
+        while p != '':
+            if len(p) == 1 or len(p) > 1 and p[1] != '*':
+                return False
+            p = p[2:]
+        return True
+
+    def isMatch(self, s, p):
+        if p == '':
+            return s == ''
+
+        if s == '':
+            return self.isEndOfStar(p)
+
+        if (len(p) > 1 and p[1] != '*') or len(p) == 1:
+            # without *
+            if not self.matchChar(s[0], p[0]):
+                return False
             else:
-                return x
+                return self.isMatch(s[1:], p[1:])
+
         else:
-            x=x*(-1)
-            x=str(x)
-            x=x[::-1]
-            x=int(x)
-            x=-1*x
-            if(x<-1*(2147483648))or(x>=2147483648):
-                return 0
-            else:
-                return x
-print(Solution.reverse(int(input()))
+            # with *
+            # try see x* is empty
+            if self.isMatch(s[0:], p[2:]):
+                return True
+
+            while self.matchChar(s[0], p[0]):
+                s = s[1:]
+
+                if self.isMatch(s, p[2:]):
+                    return True
+
+                if s == '':
+                    return self.isEndOfStar(p)
+            return False

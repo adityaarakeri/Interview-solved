@@ -5,6 +5,7 @@ class Base1:
         self.str1 = "string from base1"
         print("base1 class")
 
+
 class Base2:
 
     def __init__(self):
@@ -12,6 +13,8 @@ class Base2:
         print("base2 class")
 
 # Base1 and Base2 are being inherited by Deriver
+
+
 class Deriverd(Base1, Base2):
 
     def __init__(self):
@@ -21,12 +24,13 @@ class Deriverd(Base1, Base2):
         print("Deriver class")
 
     def printStr(self):
-        print self.str1 + " " + self.str2
+        print(self.str1 + " " + self.str2)
+
 
 d = Deriverd()
 d.printStr()
 
-# prints => 
+# prints =>
 # base1 class
 # base2 class
 # Deriver class

@@ -1,6 +1,5 @@
-#Breadth First Search Technique to search in a graph .
-#It is one of the most frequently asked Question in interviews.
-
+# Breadth First Search Technique to search in a graph .
+# It is one of the most frequently asked Question in interviews.
 
 
 class Graph:

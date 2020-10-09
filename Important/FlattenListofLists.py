@@ -10,14 +10,17 @@ output:
 '''
 
 
-#recursive function
+# recursive function
+import itertools
+
+
 def flattenList(lst, f_lst=None):
 
     if f_lst is None:
-        f_lst=[]
+        f_lst = []
 
     for l in lst:
-        if isinstance(l,list):
+        if isinstance(l, list):
             flattenList(l, f_lst)
         else:
             f_lst.append(l)
@@ -25,8 +28,9 @@ def flattenList(lst, f_lst=None):
     return f_lst
 
 
-#using itertools
-import itertools
+# using itertools
+
+
 def flattenList1(lst):
 
     f_lst = list(itertools.chain.from_iterable(lst))
@@ -34,4 +38,4 @@ def flattenList1(lst):
     return f_lst
 
 
-print flattenList([[1,2,3],[4,5,6], [7], [8,9]])
+print(flattenList([[1, 2, 3], [4, 5, 6], [7], [8, 9]]))

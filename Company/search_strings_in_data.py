@@ -12,23 +12,24 @@ Provided a large string, and an array of strings. return a dictonary with the nu
 
 """
 
+
 def return_dict(S, A):
-    
-   
+
     result = {}
     # if inputs => []
     if len(A) == 0:
         return {}
-    
+
     for i in range(len(A)):
         result[A[i]] = 0
 
         if S.count(A[i]):
             result[A[i]] = S.count(A[i])
 
-    return result 
+    return result
+
 
 S = 'this is a large string in a file'
 A = ['is', 'a']
 result = return_dict(S, A)
-print result
+print(result)

@@ -44,6 +44,6 @@ def PeakFinder1(a):
 
 a = [1,2,3,6,3,4,5,6,7,8,4]
 #a=[]
-print PeakFinder(a)
-print PeakFinder1(a)
+print (PeakFinder(a))
+print (PeakFinder1(a))
 

@@ -16,11 +16,11 @@
 # Explanation:
 # 'e' is the letter that was added.
 
-#Solution using XOR
+# Solution using XOR
 
-def diff (s1, s2):
+def diff(s1, s2):
 
-    ans=0
+    ans = 0
 
     for i in s1+s2:
         ans ^= ord(i)
@@ -28,7 +28,7 @@ def diff (s1, s2):
     return chr(ans)
 
 
-s1='abcd'
-s2='aecdb'
+s1 = 'abcd'
+s2 = 'aecdb'
 
-print diff(s1,s2)
+print(diff(s1, s2))

@@ -1,28 +1,21 @@
-#ABBCD
+# ABBCD
 
 def lookandSay(look):
 
-	say=''
-	for char in look:
-		i = look.index(char)
-		if i != look.index(look[-1]):
-			nex = look[i+1]
-			count = '1'
-			
-			if char == nex:
-				count=int(count)+1
-				continue
-			else:
-				say = str(count) + char
+    say = ''
+    for char in look:
+        i = look.index(char)
+        if i != look.index(look[-1]):
+            nex = look[i+1]
+            count = '1'
 
-	print say
+            if char == nex:
+                count = int(count)+1
+                continue
+            else:
+                say = str(count) + char
 
-
+    print(say)
 
 
-
-
-
-
-
-lookandSay(raw_input("Enter a string for LookandSay: "))
+lookandSay(input("Enter a string for LookandSay: "))

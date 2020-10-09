@@ -19,5 +19,6 @@ class Solution(object):
                 count = 0
         return ans
 
+
 l = Solution()
-print l.findMaxConsecutiveOnes([1,1,1,0,1,1,1,1])
+print(l.findMaxConsecutiveOnes([1, 1, 1, 0, 1, 1, 1, 1]))

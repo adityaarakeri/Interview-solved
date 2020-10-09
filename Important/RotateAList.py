@@ -30,15 +30,16 @@ Sample Output
 1
 '''
 
-n,k,q = raw_input().strip().split(' ')
-n,k,q = [int(n),int(k),int(q)]
-a = map(int,raw_input().strip().split(' '))
-m=[]
-for a0 in xrange(q):
-    m.append(int(raw_input().strip()))
+n, k, q = input().strip().split(' ')
+n, k, q = [int(n), int(k), int(q)]
+a = map(int, input().strip().split(' '))
+m = []
+for a0 in range(q):
+    m.append(int(input().strip()))
+
 
 def rotateArray(a, k, m):
-    
+
     r_array = [0]*len(a)
     if k % len(a) == 0:
         r_array = a
@@ -47,9 +48,9 @@ def rotateArray(a, k, m):
         for i, e in enumerate(a):
             ind = (i+k) % len(a)
             r_array[ind] = e
-    #print r_array
+    # print r_array
     for i in m:
-        print r_array[i]           
+        print(r_array[i])
 
-       
-rotateArray(a,k,m)
+
+rotateArray(a, k, m)

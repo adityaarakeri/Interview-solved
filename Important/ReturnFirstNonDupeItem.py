@@ -1,5 +1,6 @@
 import collections
 
+
 def first_non_dup_item(string):
 
     d = collections.OrderedDict()
@@ -11,7 +12,8 @@ def first_non_dup_item(string):
             d[char] = 1
 
     while d > 0:
-        char , count = d.popitem(last=False) # if you change the last=True , you will get the last dup item
+        # if you change the last=True , you will get the last dup item
+        char, count = d.popitem(last=False)
 
         if count == 1:
             return char
@@ -19,4 +21,4 @@ def first_non_dup_item(string):
     return None
 
 
-print first_non_dup_item(raw_input("Enter a string to return first Non Dupe item: "))
+print(first_non_dup_item(input("Enter a string to return first Non Dupe item: ")))

@@ -11,7 +11,7 @@ def binary_to_integer(b):
         return 0
     elif int(b) == 1:
         return 1
-    else :
+    else:
         a = list(b)
         f = 0
         i = 0
@@ -23,4 +23,4 @@ def binary_to_integer(b):
         return f
 
 
-print(binary_to_integer(raw_input("enter the binary digit to convert to integer: ")))
+print(binary_to_integer(input("enter the binary digit to convert to integer: ")))

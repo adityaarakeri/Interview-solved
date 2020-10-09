@@ -9,12 +9,14 @@ output:
 5
 '''
 
+
 def fib(limit):
 
-	a,b = 0,1
-	for i in xrange(limit):
-		a,b = b, a+b
+    a, b = 0, 1
+    for i in range(limit):
+        a, b = b, a+b
 
-	return a
+    return a
 
-print fib(10)
+
+print(fib(10))

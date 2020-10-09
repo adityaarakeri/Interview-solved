@@ -17,6 +17,7 @@ Input: S = "abc"
 Output: ["abc", "Abc", "aBc", "abC", "ABc", "AbC", "aBC", "ABC"]
 """
 
+
 class Solution(object):
     def letterCasePerm(self, S):
         """
@@ -29,13 +30,15 @@ class Solution(object):
         while S:
             last = S.pop()
             if (last.isalpha()):
-                result = [last.lower() + x for x in result] + [last.upper() + x for x in result]
-                print result
+                result = [last.lower() + x for x in result] + \
+                    [last.upper() + x for x in result]
+                print(result)
             else:
                 result = [last + x for x in result]
-                print result
-        
+                print(result)
+
         return result
+
 
 s = Solution()
 print(s.letterCasePerm('1a2bc'))
