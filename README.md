@@ -1,13 +1,33 @@
-[![Build Status](https://travis-ci.com/adityaarakeri/Interview-solved.svg?branch=master)](https://travis-ci.com/adityaarakeri/Interview-solved)
-[![Contributors](https://img.shields.io/github/contributors/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/issues)
-[![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved)
-[![Stars](https://img.shields.io/github/stars/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/stargazers)
-[![Forks](https://img.shields.io/github/forks/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/network/members)
-[![Watchers](https://img.shields.io/github/watchers/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/watchers)
-[![License](https://img.shields.io/github/license/adityaarakeri/Interview-solved)](https://github.com/adityaarakeri/Interview-solved/blob/master/LICENSE)
 
+<p align="center">
+    <a href="https://travis-ci.com/adityaarakeri/Interview-solved"> 
+    <img alt="Build Status" src="https://travis-ci.com/adityaarakeri/Interview-solved.svg?branch=master" /> 
+    </a> 
+    <a href="https://github.com/adityaarakeri/Interview-solved/graphs/contributors"> 
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/issues"> 
+    <img alt="Issues" src="https://img.shields.io/github/issues/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/pulls"> 
+    <img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr-raw/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved"> 
+    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/stargazers"> 
+    <img alt="Stars" src="https://img.shields.io/github/stars/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/network/members"> 
+    <img alt="Forks" src="https://img.shields.io/github/forks/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/watchers"> 
+    <img alt="Watchers" src="https://img.shields.io/github/watchers/adityaarakeri/Interview-solved" /> 
+    </a>
+    <a href="https://github.com/adityaarakeri/Interview-solved/blob/master/LICENSE"> 
+    <img alt="License" src="https://img.shields.io/github/license/adityaarakeri/Interview-solved" /> 
+    </a>
+</p>
 ---
 
 # Interview solutions in Python3
@@ -17,12 +37,13 @@ There implementations are for learning purposes. If you want to contribute more 
 
 
 ## Contributing Guidelines
-To contribute make sure the Algorithm isn't commited yet! Make sure to add the number of the Issue in your PR.
+To contribute make sure the Problem hasn't already added to the repo. Make sure to add the number of the Issue in your PR.
 
 ### Folders and Files
 - Make sure to add the solution to the problem in the respective file folder
 - Test the solution on the respective site before submitting the solution
 - Each file must end in `.py`
+- Each file should be `python3` compatible
 
 ### Opening Issues
 - When you open an issue, please make sure the Problem is not already implemented
