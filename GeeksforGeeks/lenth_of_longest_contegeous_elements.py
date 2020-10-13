@@ -44,4 +44,4 @@ def find_length(arr):
 # A = [1, 56, 58, 57, 90, 92, 94, 93, 91, 45]
 # A = [10, 12, 11]
 A = [15, 13, 11, 20]
-print(find_length(A)))
+print(find_length(A))
