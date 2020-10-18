@@ -6,7 +6,7 @@ needed to convert start to end using these operations:
 </p>
   <ul>
    <li>Increment by 1</li>
-   <li>Multiply by 2</li>
+   <li>Multiply b 2</li>
   </ul>
 
   <h3><b>Constraints</b></h3>
