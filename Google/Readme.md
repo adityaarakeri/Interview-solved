@@ -1,8 +1,9 @@
 <h1><a href="https://binarysearch.com/problems/Target-Number-with-Operations">Target Number with Operations</a></h1>
 
-
+<p>
 Given positive integers <code>start</code> and <code>end</code> <code>(start < end)</code>, return the minimum number of operations
 needed to convert start to end using these operations:
+</p>
   <ul>
    <li>Increment by 1</li>
    <li>Multiply by 2</li>
@@ -20,13 +21,15 @@ needed to convert start to end using these operations:
 start=2
 end=9
 ```
-<h4>Output</h4>
+<h4><b>Output</b></h4>
 
   ```bash
-start=2
-end=9
+3
 ```
-<h4><b>Output</b></h4> 
+<h3><b>Explanation</b></h3>
+<p>
+We can multiply <code>2</code> to get <code>4</code>, and then again to get <code>8</code>, then add <code>1</code> to get <code>9</code>.</p>
+
 
 
 
