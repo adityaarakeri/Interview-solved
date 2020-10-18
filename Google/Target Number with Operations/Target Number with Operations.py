@@ -20,3 +20,11 @@ if __name__=="__main__":
     start=int(input())
     end=int(input())
     print(solve(start,end))    
+"""
+Test:
+start=2
+end=9
+
+Output:
+3
+"""    
