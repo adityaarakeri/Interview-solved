@@ -1,4 +1,5 @@
-<h1><a href="https://binarysearch.com/problems/Target-Number-with-Operations" style="color:#cc0000">Target Number with Operations</a></h1>
+<h1><a class="link-gray" "href="https://binarysearch.com/problems/Target-Number-with-Operations">Target Number with Operations</a></h1>
+
 
 Given positive integers <code>start</code> and <code>end</code> <code>(start < end)</code>, return the minimum number of operations
 needed to convert start to end using these operations:
@@ -14,5 +15,10 @@ needed to convert start to end using these operations:
   <h2>Example 1</h2>
    
   <h4>Input</h4> 
+
+  ```bash
+start=2
+end=9
+```
 
 
