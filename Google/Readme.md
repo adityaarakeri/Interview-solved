@@ -1,4 +1,4 @@
-<p style="color:black"><h1><a href="https://binarysearch.com/problems/Target-Number-with-Operations">Target Number with Operations</a></h1></p>
+<h1><a href="https://binarysearch.com/problems/Target-Number-with-Operations" style="color:#cc0000">Target Number with Operations</a></h1>
 
 Given positive integers <code>start</code> and <code>end</code> <code>(start < end)</code>, return the minimum number of operations
 needed to convert start to end using these operations:
