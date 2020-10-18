@@ -1,4 +1,4 @@
-# Target Number with Operations
+<h1 id="custom-id">Target Number with Operations</h1>
 
 Given positive integers <code>start</code> and <code>end</code> <code>(start < end)</code>, return the minimum number of operations
 needed to convert start to end using these operations:
@@ -9,5 +9,10 @@ needed to convert start to end using these operations:
 
   <h3>Constraints</h3>
   <ul>
-  <li><code></code>start < end < 2 ** 31</code></li>
+  <li><code>start < end < 2 ** 31</code></li>
   </ul>
+  <h2>Example 1</h2>
+   
+  <h4>Input</h4> 
+
+
