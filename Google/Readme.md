@@ -1,5 +1,5 @@
 <h1><a "href="https://binarysearch.com/problems/Target-Number-with-Operations">Target Number with Operations</a></h1>
-<a class="link-gray-dark"  href="#url">link-gray-dark</a>
+
 
 
 Given positive integers <code>start</code> and <code>end</code> <code>(start < end)</code>, return the minimum number of operations
