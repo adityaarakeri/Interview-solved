@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/n-queen-in-on-space/
+
 # print the solutions for the queen to travel on chess board
 # also print the steps by count on the board
 # Contribution made by "gitkp" 
