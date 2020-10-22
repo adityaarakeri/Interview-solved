@@ -11,25 +11,27 @@ output:
 
 
 def looksay(look):
-	
-	look = str(look)
-	if len(look) == 0:
-		return 'Empty string entered'
-	else:
-		prev = look[0]
-		count = 1
-		say = ''
 
-		for char in look[1:]:
-			if char == prev:
-				count += 1
-				continue
-			say += str(count) + prev
-			prev = char
-			count = 1
+    look = str(look)
+    if len(look) == 0:
+        return 'Empty string entered'
+    else:
+        prev = look[0]
+        count = 1
+        say = ''
 
-		return say + str(count) + prev 
+        for char in look[1:]:
+            if char == prev:
+                count += 1
+                continue
+            say += str(count) + prev
+            prev = char
+            count = 1
+
+        return say + str(count) + prev
 
 # change to ignore count == 1 and the prefix the numbers to the front
 
-print looksay(raw_input("Enter a value which needs to be looked and said: ")) #number will go here
+
+# number will go here
+print(looksay(input("Enter a value which needs to be looked and said: ")))

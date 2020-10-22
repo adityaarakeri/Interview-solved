@@ -9,6 +9,7 @@ Output: "bacdfeg"
 
 """
 
+
 class Solution(object):
     def reverseStr(self, s, k):
         """
@@ -32,11 +33,11 @@ class Solution(object):
 
                 result = result + temp[::-1]
                 i = i + k
-            
+
             return result
-        
+
 
 s = Solution()
-input_string = raw_input("string to reverse: ")
-integer = int(raw_input("enter the integer: "))
+input_string = input("string to reverse: ")
+integer = int(input("enter the integer: "))
 print(s.reverseStr(input_string, integer))

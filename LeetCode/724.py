@@ -18,24 +18,26 @@ Also, 3 is the first index where this occurs.
 
 """
 
+
 class Solution:
     def pivotIndex(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        
+
         total = sum(nums)
         sum_so_far = 0
-        
+
         for i in range(len(nums)):
-            if sum_so_far * 2 + nums[i] == total :
+            if sum_so_far * 2 + nums[i] == total:
                 return i
             else:
                 sum_so_far += nums[i]
-        
+
         return -1
+
 
 s = Solution()
 A = [1, 7, 3, 6, 5, 6]
-print s.pivotIndex(A)
+print(s.pivotIndex(A))

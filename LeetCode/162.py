@@ -18,6 +18,7 @@ Explanation: 3 is a peak element and your function should return the index numbe
 
 '''
 
+
 class Solution:
 
     def findPeak(self, nums):
@@ -28,13 +29,13 @@ class Solution:
         while low <= high:
             if low == high:
                 return low
-            
+
             mid = (low + high)/2
             if nums[mid] < nums[mid + 1]:
                 low = mid + 1
             else:
                 high = mid
-        
+
         return mid
 
     def findPeak1(self, nums):
@@ -42,7 +43,7 @@ class Solution:
         if not nums:
             return -1
         peak = nums[0]
-        for i in xrange(1, n -1):
+        for i in range(1, n - 1):
             first = nums[i-1]
             mid = nums[i]
             last = nums[i+1]
@@ -51,13 +52,14 @@ class Solution:
                     peak = mid
             else:
                 i += 1
-            
+
         if peak != nums[0]:
             return nums.index(peak)
         else:
             return -1
 
+
 s = Solution()
-A = [1,4,2,6,1]
+A = [1, 4, 2, 6, 1]
 print(s.findPeak(A))
 print(s.findPeak1(A))

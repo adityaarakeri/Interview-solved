@@ -6,7 +6,7 @@ def firstRecurring(str):
 
     if (len(str) == 0 or len(str) == 1):
         return str
-    
+
     if (str.isdigit()):
         return '\0'
 
@@ -20,4 +20,4 @@ def firstRecurring(str):
     return '\0'
 
 
-print(firstRecurring(raw_input("enter the string to get first recurring char: ")))
+print(firstRecurring(input("enter the string to get first recurring char: ")))

@@ -16,13 +16,14 @@ class Solution(object):
         :rtype: str
         """
         new = ''
-        for i in xrange(len(str)):
-            if ord(str[i]) < 97  and ord(str[i]) > 64:
+        for i in range(len(str)):
+            if ord(str[i]) < 97 and ord(str[i]) > 64:
                 new = new + chr(ord(str[i]) + 32)
             else:
                 new = new + str[i]
-                
+
         return new
+
 
 s = Solution()
 print(s.toLowerCase('HeLLo'))

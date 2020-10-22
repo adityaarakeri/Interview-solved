@@ -3,9 +3,9 @@
 def matrix(n, c):
 
     for i in range(n):
-        print n * c
+        print(n * c)
 
 
-number = int(raw_input("Enter the Dimension of the matrix: "))
-character = raw_input("Enter the character to make the matrix: ")
+number = int(input("Enter the Dimension of the matrix: "))
+character = input("Enter the character to make the matrix: ")
 matrix(number, character)

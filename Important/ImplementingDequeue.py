@@ -9,16 +9,16 @@ class Dequeue:
 
     def addRear(self, item):
         self.items.insert(0, item)
-    
+
     def addFront(self, item):
         self.items.append(item)
-    
+
     def isEmpty(self):
         return self.items == []
-    
+
     def removeFront(self):
         return self.items.pop()
-    
+
     def removeRear(self):
         return self.items.pop(0)
 
@@ -27,7 +27,7 @@ class Dequeue:
 
 # d1 = Dequeue()
 # d2 = Dequeue()
-# s = raw_input(">")
+# s = input(">")
 # for ch in s:
 #     d1.addFront(ch)
 

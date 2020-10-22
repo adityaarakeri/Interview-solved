@@ -23,6 +23,7 @@ Output: false
 
 '''
 
+
 class Solution(object):
     def buddyStrings(self, A, B):
         """
@@ -34,11 +35,11 @@ class Solution(object):
             return False
         if A == B and len(set(A)) < len(A):
             return True
-        diff = [(a,b) for a,b in zip(A,B) if a != b]
+        diff = [(a, b) for a, b in zip(A, B) if a != b]
         return len(diff) == 2 and diff[0] == diff[1][::-1]
 
 
 s = Solution()
-A = raw_input("enter string A: ")
-B = raw_input("enter string B: ")
-print(s.buddyStrings(A,B))
+A = input("enter string A: ")
+B = input("enter string B: ")
+print(s.buddyStrings(A, B))

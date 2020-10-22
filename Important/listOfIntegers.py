@@ -7,43 +7,49 @@ input
 output
 [24,12,8,6]
 '''
+from functools import reduce
+
 
 def list_of_int(old_list):
 
-	new_list=[]
+    new_list = []
 
-	for val in old_list:
-		d_list=[]
-		for val1 in old_list:
-			if old_list.index(val)!=old_list.index(val1):
-				d_list.append(val1)
-				i=reduce(lambda x, y: x*y, d_list)
-		new_list.append(i)
+    for val in old_list:
+        d_list = []
+        for val1 in old_list:
+            if old_list.index(val) != old_list.index(val1):
+                d_list.append(val1)
+                i = reduce(lambda x, y: x*y, d_list)
+        new_list.append(i)
 
-	return new_list
+    return new_list
+
 
 def listofints(l):
 
-	if l==[]:
-		return []
-	elif len(l)==1:
-		return l
+    if l == []:
+        return []
+    elif len(l) == 1:
+        return l
 
-	stack=[]
-	for i in range(len(l)):
-		res=multiply(l[:i],l[i+1:])
-		stack.append(res)
+    stack = []
+    for i in range(len(l)):
+        res = multiply(l[:i], l[i+1:])
+        stack.append(res)
 
-	return stack
-	
-def multiply(l1,l2):
-	if l1==[] or l2==[]:
-		return 1
-	i=reduce(lambda x,y: x*y, l1)
-	j=reduce(lambda x,y: x*y, l2)
-	return i*j
+    return stack
 
-#solution
+
+def multiply(l1, l2):
+    if l1 == [] or l2 == []:
+        return 1
+    i = reduce(lambda x, y: x*y, l1)
+    j = reduce(lambda x, y: x*y, l2)
+    return i*j
+
+# solution
+
+
 def get_products_of_all_ints_except_at_index(int_list):
 
     # we make a list with the length of the input list to
@@ -73,6 +79,5 @@ def get_products_of_all_ints_except_at_index(int_list):
     return products_of_all_ints_except_at_index
 
 
-
-#print list_of_int([1,2,3,4])
-print listofints([1,2,3,4])
+# print list_of_int([1,2,3,4])
+print(listofints([1, 2, 3, 4]))

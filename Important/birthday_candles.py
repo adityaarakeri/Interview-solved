@@ -4,7 +4,7 @@
 
 # Input Format
 
-# The first line contains a single integer, , denoting the number of candles on the cake. 
+# The first line contains a single integer, , denoting the number of candles on the cake.
 # The second line contains  space-separated integers, where each integer  describes the height of candle .
 
 # Constraints
@@ -24,13 +24,14 @@
 
 # We have one candle of height , one candle of height , and two candles of height . Colleen only blows out the tallest candles, meaning the candles where . Because there are  such candles, we print  on a new line.
 
-n = int(raw_input().strip())
-height = map(int,raw_input().strip().split(' '))
+n = int(input().strip())
+height = map(int, input().strip().split(' '))
+
 
 def returnValue(arr):
-    
+
     if len(arr) == 1:
-        print "1"
+        print ("1")
     else:
         d = {}
         for x in arr:
@@ -40,7 +41,8 @@ def returnValue(arr):
                 d[x] = 1
         k_Array = sorted(d.keys())
         max_val = k_Array[-1]
-        
-        print d[max_val]
+
+        print(d[max_val])
+
 
 returnValue(height)

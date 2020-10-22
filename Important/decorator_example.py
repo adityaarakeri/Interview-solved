@@ -17,7 +17,7 @@ def welcome(name):
 
 # using the welcom now
 
-print welcome("decorator example")
+print (welcome("decorator example"))
 # prints => Welcome to decorator example
 
 # 2

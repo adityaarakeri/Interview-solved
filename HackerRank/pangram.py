@@ -4,9 +4,9 @@
 
 # Given a sentence , tell Roy if it is a pangram or not.
 
-s = raw_input().lower()
-
 import string
+s = input().lower()
+
 
 alphabets = [x for x in string.ascii_lowercase]
 
@@ -18,6 +18,6 @@ for char in alphabets:
         result.append(0)
 
 if 0 in result:
-    print "not pangram"
+    print("not pangram")
 else:
-    print "pangram"
+    print("pangram")

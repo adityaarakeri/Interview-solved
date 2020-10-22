@@ -2,8 +2,8 @@
 
 def BaseConverter(num, base):
 
-    digits= "0123456789ABCDEF"
-    stack= []
+    digits = "0123456789ABCDEF"
+    stack = []
     newString = ""
 
     while num > 0:
@@ -11,13 +11,13 @@ def BaseConverter(num, base):
         stack.append(rem)
         num = num // base
 
-    while len(stack)>0:
+    while len(stack) > 0:
         newString = newString + digits[stack.pop()]
-
 
     return newString
 
-print BaseConverter(26,2) # binary conversion
-print BaseConverter(26,8) # Octal
-print BaseConverter(26,16) # Hexadecimal
-print BaseConverter(26,26)   # base of 26
+
+print(BaseConverter(26, 2))  # binary conversion
+print(BaseConverter(26, 8))  # Octal
+print(BaseConverter(26, 16))  # Hexadecimal
+print(BaseConverter(26, 26))   # base of 26
