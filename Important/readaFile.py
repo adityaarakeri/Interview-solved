@@ -1,9 +1,9 @@
 
-path=''
+path = ''
 
-total=0
+total = 0
 with open(path) as f:
-	lines = f.read()
+    lines = f.read()
 
 for line in lines:
-	print line
+    print(line)

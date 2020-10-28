@@ -10,4 +10,5 @@ def findMin(lst):
 
     return minInList
 
-print findMin([5,4,3,2,1,0])
+
+print(findMin([5, 4, 3, 2, 1, 0]))

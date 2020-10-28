@@ -6,17 +6,18 @@ current directory
 
 
 import os
+
+
 def osWalkandFind(pat):
 
-	pattern_lst = []
+    pattern_lst = []
 
-	for dirpath, dirname , filenames in os.walk(os.getcwd()):
-		for filename in filenames:
-			if filename.endswith(pat):
-				pattern_lst.append(os.path.join(dirpath, filename))
+    for dirpath, dirname, filenames in os.walk(os.getcwd()):
+        for filename in filenames:
+            if filename.endswith(pat):
+                pattern_lst.append(os.path.join(dirpath, filename))
 
-	print "Files found of format({}): {}".format(pat, str(len(pattern_lst)))
+    print("Files found of format({}): {}".format(pat, str(len(pattern_lst))))
 
 
-osWalkandFind(raw_input("\nEnter the pattern to search(ex: .txt, .py : "))
-
+osWalkandFind(input("\nEnter the pattern to search(ex: .txt, .py : "))

@@ -11,11 +11,13 @@ collection = {
     'tan': 2
 }
 
+
 def choose_random(collection, picks=1):
-    
+
     box_of_socks = []
     for i in range(len(collection)):
-        box_of_socks.append([str(collection.keys()[i])] * collection.values()[i])
+        box_of_socks.append([str(collection.keys()[i])]
+                            * collection.values()[i])
 
     choice = []
     for color_box in box_of_socks:
@@ -29,4 +31,4 @@ def choose_random(collection, picks=1):
     return len(choice)+1
 
 
-print choose_random(collection, picks=1)
+print(choose_random(collection, picks=1))

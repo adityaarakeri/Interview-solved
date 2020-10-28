@@ -24,34 +24,33 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
-        result = ''
-        if len(strs) == 0:
-            return ''
+        prefix = ''
         i = 0
-        d = {i: len(v) for i,v in enumerate(strs)}
-        count = min(d.values())
-        
-        for i in range(1, count+1):
-            prefix = strs[0][:i]
-            for s in strs:
-                if s[:i] != prefix:
-                    return result
-            
-            result = prefix
-        
-        return result
+        while True:
+            try:
+                tmp = strs[0][i]
+                for item in strs:
+                    if item[i] != tmp:
+                        return prefix
+            except:
+                return prefix
+            prefix += tmp
+            i += 1
+        return prefix
 
-
-    def optimized(self, strs):
-        result = ""
-        for n in zip(*strs):
-            if (len(set(n))) == 1:
-                result = result + n[0]
+    def longestCommonPrefix_use_zip(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        prefix = ''
+        for _, item in enumerate(zip(*strs)):
+            if len(set(item)) > 1:
+                return prefix
             else:
-                return result
+                prefix += item[0]
+        return prefix
 
-        return result
 
-s = Solution()
-# print(s.longestCommonPrefix(raw_input().split()))
-print(s.optimized(raw_input().split()))
+a = Solution().longestCommonPrefix_use_zip(["flower", "flow", "flight"])
+print(a)

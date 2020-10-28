@@ -19,6 +19,6 @@ q = Queue()
 q.enqueue('a')
 q.enqueue('b')
 q.enqueue('c')
-print q 
+print(q)
 q.dequeue('c')
-print q
+print(q)

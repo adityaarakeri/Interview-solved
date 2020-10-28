@@ -3,10 +3,10 @@ class Node:
     def __init__(self, initdata):
         self.data = initdata
         self.next = None
-    
+
     def getData(self):
         return self.data
-    
+
     def setData(self, newData):
         self.data = newData
 
@@ -18,8 +18,8 @@ class Node:
 
 
 N = Node(24)
-print N.data
+print(N.data)
 N.setNext(25)
 N.setNext(26)
 N1 = Node(25)
-print N1.data
+print(N1.data)

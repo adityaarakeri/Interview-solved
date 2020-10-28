@@ -1,8 +1,9 @@
-from ImplementStack import Stack
+from Implement.Stack import Stack
+
 
 def reverseUsingStack(str):
 
-    s=Stack()
+    s = Stack()
     rev_s = ''
     for char in str:
         s.push(char)
@@ -13,4 +14,4 @@ def reverseUsingStack(str):
     return rev_s
 
 
-print reverseUsingStack(raw_input("Enter a string to be reverse > "))
+print(reverseUsingStack(input("Enter a string to be reverse > ")))

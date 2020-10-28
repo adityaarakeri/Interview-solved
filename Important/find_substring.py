@@ -14,4 +14,4 @@ def find_substring(s1, s2):
 
     return count
 
-print find_substring('abcdcdcd', 'cd')
+print (find_substring('abcdcdcd', 'cd'))

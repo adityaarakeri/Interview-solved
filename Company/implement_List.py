@@ -20,6 +20,6 @@ l = List()
 l.addItem('a')
 l.addItem('a')
 l.addItem('b')
-print l
+print(l)
 l.removeItem('b')
-print l
+print(l)

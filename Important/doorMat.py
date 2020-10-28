@@ -10,7 +10,6 @@
 # Constraints
 
 
-
 # Output Format
 
 # Output the design pattern.
@@ -31,14 +30,14 @@
 # ------------.|.------------
 
 try:
-    N = int(raw_input("Enter the No of rows you need in your Mat: \n").strip()) # More than 6 lines of code will result in 0 score. Blank lines are not counted.
-except: 
-    print "Did not enter a number for the number of rows"
-
-#no of coulmns calculated using N
+    # More than 6 lines of code will result in 0 score. Blank lines are not counted.
+    N = int(input("Enter the No of rows you need in your Mat: \n").strip())
+except:
+    print("Did not enter a number for the number of rows")
+# no of coulmns calculated using N
 M = N*3
-for i in xrange(1,N,2): 
-    print "{:-^{fill}}".format(".|." * i, fill=M)
-print "{:-^{fill}}".format("WELCOME", fill=M)
-for i in xrange(N-2,-1,-2): 
-    print "{:-^{fill}}".format(".|."*i, fill=M)
+for i in range(1, N, 2):
+    print("{:-^{fill}}".format(".|." * i, fill=M))
+print("{:-^{fill}}".format("WELCOME", fill=M))
+for i in range(N-2, -1, -2):
+    print("{:-^{fill}}".format(".|."*i, fill=M))

@@ -29,6 +29,7 @@ Output: "1211"
 
 """
 
+
 class Solution(object):
     def countAndSay(self, n):
         """
@@ -38,7 +39,7 @@ class Solution(object):
         if n == 1:
             return '1'
         s = '1'
-        for _ in xrange(n - 1):
+        for _ in range(n - 1):
             count = 1
             result = ''
             for i in range(1, len(s)):
@@ -49,7 +50,7 @@ class Solution(object):
                     count = 1
             result += str(count) + s[-1]
             s = result
-        
+
         return s
 
     def count_and_say_improved(self, n):
@@ -58,7 +59,7 @@ class Solution(object):
         # counter = 0
         s = '1'  # Start know one == '1'
         result = []
-        for _ in xrange(n - 1):
+        for _ in range(n - 1):
             counter, current_val = 0, s[0]
             for v in s:
                 if v == current_val:
@@ -73,7 +74,7 @@ class Solution(object):
             s = "".join(result)
             result = []
         return s
-            
+
 
 s = Solution()
 a = 4

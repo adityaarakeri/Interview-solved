@@ -13,4 +13,4 @@ def insertionSort(A):
 
 A = [54,26,93,17,77,31,44,55,20]
 insertionSort(A)
-print A
+print (A)
