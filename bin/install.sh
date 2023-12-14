@@ -1,3 +1,3 @@
 #! /bin/bash
 
-pip install -r requirements.txt
+pipenv install pytest numpy

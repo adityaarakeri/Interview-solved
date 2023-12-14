@@ -1,3 +1,3 @@
 #! /bin/bash
 
-pytest -vrfE
+pipenv run pytest -vrfE -s -k test/
