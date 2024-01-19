@@ -17,11 +17,22 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 
 #Actual Solution
 class Solution:
+    # using .index
     def strStr(self, haystack: str, needle: str) -> int:
         try:
             return haystack.index(needle)
         except:
             return -1
+    # using array slicing
+    def strStr2(self, haystack: str, needle: str) -> int:
+        if needle not in haystack:
+            return -1
+        else:
+            nl = len(needle)
+            hl = len(haystack)
+            for i in range(hl - nl+1):
+                if haystack[i: i+nl] == needle:
+                    return i
 #Demo
 s = Solution()
 
