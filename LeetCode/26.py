@@ -10,7 +10,7 @@ class Solution:
         di = {}
         x = 0
         while x < len(nums):
-            print(x)
+            # print(x)
             if nums[x] in di.keys():
                 nums.remove(nums[x])
                 x = x-1
@@ -18,3 +18,6 @@ class Solution:
                 di[nums[x]] = 1
             x = x+1
         return len(nums)
+
+s = Solution()
+print(s.removeDuplicates([1,1,2]))
