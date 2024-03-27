@@ -35,3 +35,34 @@ print(addition.data)
 # prints => 5
 # prints => attached data to function
 
+
+# decorator to conver to lowercase
+def lowercase_decorator(function):
+    def wrapper(*args):
+        new_args = []
+        for arg in args:
+            new_args.append(arg.lower())
+        return function(*new_args)
+    return wrapper
+
+# decorator to convert to Capitalize
+def capitalize_decorator(function):
+    def wrapper(*args):
+        new_args = []
+        for arg in args:
+            new_args.append(arg.capitalize())
+        return function(*new_args)
+    return wrapper
+
+
+@lowercase_decorator
+def hello(s):
+    print(s)
+
+hello("Hello World")
+
+@capitalize_decorator
+def hello1(s):
+    print(s)
+
+hello1("hello world")

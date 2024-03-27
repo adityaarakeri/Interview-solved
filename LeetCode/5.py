@@ -17,19 +17,23 @@ Output: "bb"
 
 
 class Solution(object):
-    def isPalindrome(self, x):
+    def isPalindrome(self, s):
         """
         :type x: int
         :rtype: bool
         """
-        if x < 0:
-            return False
+        result = ""
+        n = len(s)
 
-        if len(str(x)) % 2 == 0:
-            return int(str(x)[:len(str(x))//2]) == int(str(x)[len(str(x))//2:][::-1])
-        else:
-            return int(str(x)[:len(str(x))//2+1]) == int(str(x)[len(str(x))//2:][::-1])
+        for i in range(n):
+            for j in range(i + 1, n + 1):
+                x = s[i:j]
+                if x == x[::-1]:
+                    if len(x) > len(result):
+                        result = x
+        return result
 
 
-a = Solution().isPalindrome(+2147447412)
-print(a)
+S = Solution()
+print(S.isPalindrome("babad"))
+print(S.isPalindrome("cbbd"))

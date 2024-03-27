@@ -11,17 +11,19 @@ def countingValleys(n, s):
     level = 0
 
     for c in s:
-        if c is 'D':
+        if c == 'D':
             level -= 1
-        elif c is 'U':
+        elif c == 'U':
             level += 1
 
-            if level is 0:
+            if level == 0:
                 valleys += 1
     return valleys
 
 
-if __name__ == '__main__':
-    steps = 'UDDDUDUU'
-    awns = countingValleys(len(steps), steps)
-    print(awns)
+
+steps = 'UDDDUDUU'
+steps1 = 'DDUUUUDD'
+print(countingValleys(len(steps), steps))
+print(countingValleys(len(steps1), steps1))
+

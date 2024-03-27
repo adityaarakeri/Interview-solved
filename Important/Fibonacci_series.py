@@ -13,7 +13,7 @@ output:
 def fib(limit):
 
     a, b = 0, 1
-    for i in range(limit):
+    for _ in range(limit):
         a, b = b, a+b
 
     return a
